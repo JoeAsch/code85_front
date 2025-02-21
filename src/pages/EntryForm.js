@@ -38,6 +38,9 @@ export default function EntryForm() {
         <option value='Bopis issue'>Bopis Issue</option>
         <option value='Cycle Count'>Cycle Count</option>
         <option value='IS4TC'>IS4TC</option>
+        <option value='85Error'>Reverse Previous Error</option>
+        <option value='Receiving'>Receiving or Transfer Error</option>
+        <option value='Other'>Other</option>
 
       </select>
       </div>
