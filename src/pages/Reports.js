@@ -2,7 +2,6 @@
 import React, {useState, useEffect} from "react";
 import {useTable} from "react-table";
 import axios from "axios";
-//import Navbar from './Navbar';
 
 function Table({columns, data}) {
     const {
@@ -35,15 +34,20 @@ function Table({columns, data}) {
     </table>);
   }
   
+
+  
   
   
   function MyApp() {
+
+    
     
     const [loadingData, setLoadingData] = useState(true);
     const [data, setData] = useState([]);
     const columns = React.useMemo(() => [
       {
-        Header: "Inventory Removal Tracker",
+        Header:"Report",
+        
         columns: [
           {
             Header: "Date",
@@ -63,7 +67,13 @@ function Table({columns, data}) {
           }, {
               Header: "Price",
               accessor: "price"
-            }
+            },
+            {
+              Header: "ID",
+              accessor: "id"
+            },
+            
+        
         ]
        }
       ], []);
@@ -87,7 +97,8 @@ function Table({columns, data}) {
         : (<Table columns={columns}
           data={data}/>)
     }
-   
+      
+    
      </>
      
     );

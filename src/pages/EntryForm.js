@@ -70,9 +70,3 @@ export default function EntryForm() {
     </div>
   );
 }
-
-
-//const EntryForm = () => {
-  //  return <h1>EntryForm</h1>
-//};
-
