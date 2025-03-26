@@ -2,12 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import './table.css';
-//import MyApp from './components/Table';
-//import Navbar from './components/Navbar';
-//import { BrowserRouter } from 'react-router-dom';
-//import reportWebVitals from './reportWebVitals';
+
 import Browser from './pages/Navbartoo';
-//import Reports from './pages/Reports';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
